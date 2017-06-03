@@ -53,7 +53,7 @@ potreban samo njegov URL za vršenje CRUD operacija preko različitih HTTP metod
 * Mapirati je na URL `api/activities` korišćenjem `@RequestMapping` anotacije
 
 ---------------------------------------
-* [Dependency Injection](http://igordejanovic.net/courses/tech/DependencyInjection.html#/) je softverski obrazac koji se koristi kako bi se olakšalo instanciranje objekata. Postoje mnoge implementacije koje se mogu koristiti nezavisno od Spring-a. U okviru Spring Framework-a, DI se koristi kako bi se dobila referenca na neku komponentu
+* [Dependency Injection](http://www.igordejanovic.net/courses/tech/dependency-injection.html) je softverski obrazac koji se koristi kako bi se olakšalo instanciranje objekata. Postoje mnoge implementacije koje se mogu koristiti nezavisno od Spring-a. U okviru Spring Framework-a, DI se koristi kako bi se dobila referenca na neku komponentu
 * Da bi Spring Dependency Injecion radio, potrebno je uključiti component-scan mehanizam. U Spring Boot, ovo podešavanje je deo anotacije `@SpringBootApplication` koju smo već primenili. 
 
 * Anotirati `InMemoryActivityService` kao `@Service`
