@@ -1,5 +1,21 @@
 ## Lab 2 - REST, Spring Boot, Dependency injection
 
+
+### Spring Boot
+
+[Spring Boot](http://projects.spring.io/spring-boot/) se koristi kako bi se pojednostavila konfiguracija Spring projekata. Umesto XML konfiguracionih fajlova, koriste se anotacije u Java klasama. Takođe, na osnovu biblioteka raspoloživih na class path-u, Spring Boot automatski postavlja podrazumevanu konfiguraciju za svaku od njih. Ova konfiguracija se po potrebi može menjati. 
+
+* Obratiti pažnju na izmenjen sadržaj `pom.xml`
+* Napraviti klasu WafepaApplication u kojoj će se nalaziti početna Spring Boot konfiguracija. Klasa treba da nasledi `SpringBootServletInitializer`
+* Anotirati klasu kao `@SpringBootApplication`
+* Dodati ovoj kalsi main metodu
+```java
+	public static void main(String[] args) throws Exception {
+		SpringApplication.run(Wafepa.class, args);
+	}
+```
+* **Pokrenuti klasu kao običnu Java aplikaciju**
+
 ### REST
 
 ----
@@ -25,22 +41,6 @@ potreban samo njegov URL za vršenje CRUD operacija preko različitih HTTP metod
 ![REST API](https://cloud.githubusercontent.com/assets/5716823/15862925/87f852f6-2cd1-11e6-8d3b-d8030942739a.png)
 
 ----
-
-
-### Spring Boot
-
-[Spring Boot](http://projects.spring.io/spring-boot/) se koristi kako bi se pojednostavila konfiguracija Spring projekata. Umesto XML konfiguracionih fajlova, koriste se anotacije u Java klasama. Takođe, na osnovu biblioteka raspoloživih na class path-u, Spring Boot automatski postavlja podrazumevanu konfiguraciju za svaku od njih. Ova konfiguracija se po potrebi može menjati. 
-
-* Obratiti pažnju na izmenjen sadržaj `pom.xml`
-* Napraviti klasu WafepaApplication u kojoj će se nalaziti početna Spring Boot konfiguracija. Klasa treba da nasledi `SpringBootServletInitializer`
-* Anotirati klasu kao `@SpringBootApplication`
-* Dodati ovoj kalsi main metodu
-```java
-	public static void main(String[] args) throws Exception {
-		SpringApplication.run(Wafepa.class, args);
-	}
-```
-* **Pokrenuti klasu kao običnu Java aplikaciju**
 
 
 
