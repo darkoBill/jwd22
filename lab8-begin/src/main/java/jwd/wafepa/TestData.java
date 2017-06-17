@@ -25,7 +25,7 @@ public class TestData {
 	private ActivityService activityService;
 	
 	@PostConstruct
-	public void init(){
+	public void init(){/*
 	       for (int i = 1; i <= 100; i++) {
 	            User user = new User();
 	            user.setFirstName("First name " + i);
@@ -45,6 +45,6 @@ public class TestData {
 	            }
 	            Activity a = new Activity("Activity_"+i);
 	            activityService.save(a);
-	       }
+	       }*/
 	}
 }
