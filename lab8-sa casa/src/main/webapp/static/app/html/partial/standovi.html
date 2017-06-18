@@ -1,0 +1,28 @@
+<div ng-controller="standoviCtrl">
+	<h2>Standovi</h2>
+
+	<form>
+		<label for="zakupac">Zakupac</label>
+		<input id="zakupac" ng-model="newStand.zakupac"/><br/>
+		<label for="povrsina">Povrsina</label>
+		<input id="povrsina" ng-model="newStand.povrsina"/></br>
+		<label for="sajam">Sajam</label>
+		<select ng-model="newStand.sajamId" ng-change="change()">
+			<option ng-repeat="sajam in sajmovi" value="{{sajam.id}}">{{sajam.naziv}}</option>
+		</select>
+		<button ng-disabled="!got_sajmovi" ng-click="addStand()">Add</button>
+	</form>
+
+	<table border="1">
+		<tr>
+			<th>Zakupac</th>
+			<th>Povrsina</th>
+			<th>Sajam</th>
+		</tr>
+		<tr ng-repeat="stand in standovi">
+			<td>{{stand.zakupac}}</td>
+			<td>{{stand.povrsina}}</td>
+			<td>{{stand.sajamNaziv}}</td>
+		</tr>
+	</table>
+</div>

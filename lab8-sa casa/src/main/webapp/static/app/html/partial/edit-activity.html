@@ -1,0 +1,10 @@
+<div ng-controller="editActivityCtrl">
+	<h2>Edit works!</h2>
+	<div ng-show="!got_activity"><h3>Loading...</h3></div>
+	<div>
+		<form ng-show="got_activity">
+			<input type="text" ng-model="activity.name"/>
+			<input type="submit" ng-click="editActivity()"/>
+		</form>
+	</div>
+</div>
