@@ -70,12 +70,12 @@ public class ApiFestivalController {
 	
 	@RequestMapping(method=RequestMethod.POST)
 	public ResponseEntity<FestivalDTO> add(
-			@RequestBody FestivalDTO noviStand){
+			@RequestBody FestivalDTO noviFestival){
 		
-		Festival stand = toFestival.convert(noviStand); 
-		festivalService.save(stand);
+		Festival festival = toFestival.convert(noviFestival); 
+		festivalService.save(festival);
 		
-		return new ResponseEntity<>(toDTO.convert(stand),
+		return new ResponseEntity<>(toDTO.convert(festival),
 				HttpStatus.CREATED);
 	}
 	
